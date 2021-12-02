@@ -215,7 +215,7 @@ apt install nano net-tools curl
 
     ![5.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/9/5.PNG?raw=true)
 
-
+<h2> NO 1</h2>
 <img width="406" alt="0" src="https://user-images.githubusercontent.com/92932656/144352498-17f01c35-2ff2-4005-8269-d9d764383eb3.PNG">
 <img width="242" alt="1" src="https://user-images.githubusercontent.com/92932656/144352518-d1a50c0c-eece-4921-8069-2a7294e2c064.PNG">
 <img width="366" alt="4" src="https://user-images.githubusercontent.com/92932656/144352584-38ca7eca-7bc4-4f29-a7b5-275d89f26a15.PNG">
@@ -226,6 +226,7 @@ apt install nano net-tools curl
 <img width="326" alt="2" src="https://user-images.githubusercontent.com/92932656/144352601-cef51507-1749-452e-be86-3425066ab8c3.PNG">
 <img width="267" alt="3" src="https://user-images.githubusercontent.com/92932656/144352605-323d764f-e95e-47c6-9e16-94de0d6da847.PNG">
 
+<h2> NO 2</h2>
 <img width="319" alt="0" src="https://user-images.githubusercontent.com/92932656/144352655-ec3d125d-9798-4919-bc9b-e04662f8212e.PNG">
 <img width="401" alt="1" src="https://user-images.githubusercontent.com/92932656/144352657-35bd0bc1-0257-4a75-b7e5-f78ff94d3c04.PNG">
 <img width="232" alt="2" src="https://user-images.githubusercontent.com/92932656/144352659-e00c67f5-3ec8-45f2-be50-c24afad5b120.PNG">
@@ -244,7 +245,108 @@ apt install nano net-tools curl
 <img width="400" alt="1" src="https://user-images.githubusercontent.com/93085602/144352908-d29022c2-08c7-4351-ba75-89f9ec8662a2.PNG">
 3. membuat file nginxiphp 
 <img width="390" alt="2" src="https://user-images.githubusercontent.com/93085602/144352916-8f412fd5-7278-4a58-bf0a-bec88957c05e.PNG">
+---
+- hosts: all
+  become : yes
+  tasks:
+    - name: install nginx nginx extras
+      apt:
+       pkg:
+         - nginx
+         - nginx-extras
+       state: latest
+    - name: start nginx
+      service:
+       name: nginx
+       state: started
+    - name: menginstall tools
+      apt:
+       pkg:
+         - curl
+         - software-properties-common
+         - unzip
+       state: latest
+    - name: "Repo PHP 7.4"
+      apt_repository:
+        repo="ppa:ondrej/php"
+    - name: "Updating the repo"
+      apt: update_cache=yes
+    - name: Installation PHP 7.4
+      apt: name=php7.4 state=present
+    - name: install php untuk laravel
+      apt:
+       pkg:
+          - php7.4-fpm
+          - php7.4-mysql
+          - php7.4-mbstring
+          - php7.4-xml
+          - php7.4-bcmath
+          - php7.4-json
+          - php7.4-zip
+          - php7.4-common
+       state: present
 4. install nginx php
 <img width="303" alt="3" src="https://user-images.githubusercontent.com/93085602/144352922-29ecc499-79fd-456a-83d7-7f7e90409950.PNG">
-4. error yang didapatkan
+5. error yang didapatkan
 <img width="403" alt="err" src="https://user-images.githubusercontent.com/93085602/144352926-6444a6c0-e6f7-4157-854c-02983f32e9fd.PNG">
+6. membuat file composer
+---
+ -hosts: all
+  become : yes
+  tasks:
+   - name: Download and install Composer
+     shell: curl -sS https://getcomposer.org/installer | php
+     args:
+      chdir: /usr/src/
+      creates: /usr/local/bin/composer
+      warn: false
+   - name: Add Composer to global path
+     copy:
+      dest: /usr/local/bin/composer
+      group: root
+      mode: '0755'
+      owner: root
+      src: /usr/src/composer.phar
+      remote_src: yes
+   - name: Composer create project
+     become_user: root
+     composer:
+      command: create-project
+      arguments: laravel/laravel landing 
+      working_dir: /var/www/html
+      prefer_dist: yes
+     environment:
+        COMPOSER_NO_INTERACTION: "1"
+   - name: mengkopi file .env.example jadi .env
+     copy:
+      dest: /var/www/html/landing/.env.example
+      src: /var/www/html/landing/.env
+      remote_src: yes
+   - name: mengganti konfigurasi .env
+     lineinfile:
+      path: /var/www/html/landing/.env
+      regexp: "{{ item.regexp }}"
+      line: "{{ item.line }}"
+      backrefs: yes
+     loop:
+      - { regexp: '^(.)DB_HOST(.)$', line: 'DB_HOST=10.0.3.200' }
+      - { regexp: '^(.)DB_DATABASE(.)$', line: 'DB_DATABASE=landing' }
+      - { regexp: '^(.)DB_USERNAME(.)$', line: 'DB_USERNAME=admin' }
+      - { regexp: '^(.)DB_PASSWORD(.)$', line: 'DB_PASSWORD= ' }
+      - { regexp: '^(.)APP_URL(.)$', line: 'APP_URL=http://vm.local' }
+      - { regexp: '^(.)APP_NAME=(.)$', line: 'APP_NAME=landing' }
+   - name: Composer install ke landing
+     composer:
+       command: install
+       working_dir: /var/www/html/landing
+     environment:
+       COMPOSER_NO_INTERACTION: "1"
+   - name: generate php artisan
+     args:
+      chdir: /var/www/html/landing
+     shell: php artisan key:generate
+   - name: mengganti permission storage
+     file:
+      path: /var/www/html/landing/storage
+      mode: 0777
+      recurse: yes
