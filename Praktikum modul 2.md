@@ -207,4 +207,12 @@ apt install nano net-tools curl
 
     ![4.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/9/4.PNG?raw=true)
 
-26. 
+26. apt install software-properties-common
+
+    ```
+    apt install software-properties-common
+    ```
+
+    ![5.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/9/5.PNG?raw=true)
+
+27. 
