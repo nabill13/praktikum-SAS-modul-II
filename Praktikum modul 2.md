@@ -285,7 +285,7 @@ apt install nano net-tools curl
           - php7.4-zip
           - php7.4-common
        state: present
-        ```
+         ```
 4. install nginx php
 <img width="303" alt="3" src="https://user-images.githubusercontent.com/93085602/144352922-29ecc499-79fd-456a-83d7-7f7e90409950.PNG">
 5. error yang didapatkan
@@ -351,4 +351,4 @@ apt install nano net-tools curl
       path: /var/www/html/landing/storage
       mode: 0777
       recurse: yes
-```
+      ```
