@@ -219,7 +219,7 @@ apt install nano net-tools curl
 <h2> NO 1</h2>
 
 ![0.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/8.1/0.PNG?raw=true)
-
+<img width="242" alt="0" src="https://user-images.githubusercontent.com/92932656/144352518-d1a50c0c-eece-4921-8069-2a7294e2c064.PNG">
 <img width="242" alt="1" src="https://user-images.githubusercontent.com/92932656/144352518-d1a50c0c-eece-4921-8069-2a7294e2c064.PNG">
 <img width="366" alt="4" src="https://user-images.githubusercontent.com/92932656/144352584-38ca7eca-7bc4-4f29-a7b5-275d89f26a15.PNG">
 <img width="212" alt="5" src="https://user-images.githubusercontent.com/92932656/144352593-824713d7-1449-4605-a566-b632fd49940c.PNG">
