@@ -236,3 +236,15 @@ apt install nano net-tools curl
 <img width="336" alt="7" src="https://user-images.githubusercontent.com/92932656/144352669-15f01c2f-2566-4107-a4be-b2563d44306f.PNG">
 <img width="185" alt="8" src="https://user-images.githubusercontent.com/92932656/144352671-4b869694-25cd-402a-ab31-88f436c7a49a.PNG">
 <img width="331" alt="9" src="https://user-images.githubusercontent.com/92932656/144352673-6baab403-b9d9-460d-b104-aac5624fcc81.PNG">
+
+<h2> NO 3</h2>
+1. Masuk ke ansible dan buat folder laravel
+<img width="159" alt="0" src="https://user-images.githubusercontent.com/93085602/144352881-fd49b1b4-1907-42e8-8287-6d38678c25bb.PNG">
+2. membuat file hosts
+<img width="400" alt="1" src="https://user-images.githubusercontent.com/93085602/144352908-d29022c2-08c7-4351-ba75-89f9ec8662a2.PNG">
+3. membuat file nginxiphp 
+<img width="390" alt="2" src="https://user-images.githubusercontent.com/93085602/144352916-8f412fd5-7278-4a58-bf0a-bec88957c05e.PNG">
+4. install nginx php
+<img width="303" alt="3" src="https://user-images.githubusercontent.com/93085602/144352922-29ecc499-79fd-456a-83d7-7f7e90409950.PNG">
+4. error yang didapatkan
+<img width="403" alt="err" src="https://user-images.githubusercontent.com/93085602/144352926-6444a6c0-e6f7-4157-854c-02983f32e9fd.PNG">
