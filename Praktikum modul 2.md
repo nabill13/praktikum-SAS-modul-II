@@ -291,7 +291,8 @@ apt install nano net-tools curl
 5. error yang didapatkan
 <img width="403" alt="err" src="https://user-images.githubusercontent.com/93085602/144352926-6444a6c0-e6f7-4157-854c-02983f32e9fd.PNG">
 6. membuat file composer
- -hosts: all
+ ```
+-hosts: all
   become : yes
   tasks:
    - name: Download and install Composer
@@ -350,3 +351,4 @@ apt install nano net-tools curl
       path: /var/www/html/landing/storage
       mode: 0777
       recurse: yes
+```
