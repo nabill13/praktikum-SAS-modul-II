@@ -215,8 +215,8 @@ apt install nano net-tools curl
 
     ![5.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/9/5.PNG?raw=true)
 
-27. 
-(1) <img width="406" alt="0" src="https://user-images.githubusercontent.com/92932656/144352498-17f01c35-2ff2-4005-8269-d9d764383eb3.PNG">
+
+<img width="406" alt="0" src="https://user-images.githubusercontent.com/92932656/144352498-17f01c35-2ff2-4005-8269-d9d764383eb3.PNG">
 <img width="242" alt="1" src="https://user-images.githubusercontent.com/92932656/144352518-d1a50c0c-eece-4921-8069-2a7294e2c064.PNG">
 <img width="366" alt="4" src="https://user-images.githubusercontent.com/92932656/144352584-38ca7eca-7bc4-4f29-a7b5-275d89f26a15.PNG">
 <img width="212" alt="5" src="https://user-images.githubusercontent.com/92932656/144352593-824713d7-1449-4605-a566-b632fd49940c.PNG">
@@ -226,7 +226,7 @@ apt install nano net-tools curl
 <img width="326" alt="2" src="https://user-images.githubusercontent.com/92932656/144352601-cef51507-1749-452e-be86-3425066ab8c3.PNG">
 <img width="267" alt="3" src="https://user-images.githubusercontent.com/92932656/144352605-323d764f-e95e-47c6-9e16-94de0d6da847.PNG">
 
-29. (2)<img width="319" alt="0" src="https://user-images.githubusercontent.com/92932656/144352655-ec3d125d-9798-4919-bc9b-e04662f8212e.PNG">
+<img width="319" alt="0" src="https://user-images.githubusercontent.com/92932656/144352655-ec3d125d-9798-4919-bc9b-e04662f8212e.PNG">
 <img width="401" alt="1" src="https://user-images.githubusercontent.com/92932656/144352657-35bd0bc1-0257-4a75-b7e5-f78ff94d3c04.PNG">
 <img width="232" alt="2" src="https://user-images.githubusercontent.com/92932656/144352659-e00c67f5-3ec8-45f2-be50-c24afad5b120.PNG">
 <img width="360" alt="3" src="https://user-images.githubusercontent.com/92932656/144352662-70be253c-da96-4ea4-9cd8-8d7406c8185b.PNG">
