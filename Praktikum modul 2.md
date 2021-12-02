@@ -245,7 +245,7 @@ apt install nano net-tools curl
 <img width="400" alt="1" src="https://user-images.githubusercontent.com/93085602/144352908-d29022c2-08c7-4351-ba75-89f9ec8662a2.PNG">
 3. membuat file nginxiphp 
 <img width="390" alt="2" src="https://user-images.githubusercontent.com/93085602/144352916-8f412fd5-7278-4a58-bf0a-bec88957c05e.PNG">
----
+ ```
 - hosts: all
   become : yes
   tasks:
@@ -285,12 +285,13 @@ apt install nano net-tools curl
           - php7.4-zip
           - php7.4-common
        state: present
+        ```
 4. install nginx php
 <img width="303" alt="3" src="https://user-images.githubusercontent.com/93085602/144352922-29ecc499-79fd-456a-83d7-7f7e90409950.PNG">
 5. error yang didapatkan
 <img width="403" alt="err" src="https://user-images.githubusercontent.com/93085602/144352926-6444a6c0-e6f7-4157-854c-02983f32e9fd.PNG">
 6. membuat file composer
----
+```
  -hosts: all
   become : yes
   tasks:
@@ -350,3 +351,4 @@ apt install nano net-tools curl
       path: /var/www/html/landing/storage
       mode: 0777
       recurse: yes
+       ```
