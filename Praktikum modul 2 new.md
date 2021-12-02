@@ -1,14 +1,14 @@
-# **# PRAKTIKUM MODUL II **
+# PRAKTIKUM MODUL II
 
 # **SISTEM ADMINISTRASI SERVER**
 
 #### KELOMPOK II
 
-#### -> Evyra Rizki Safitri   
+#### -> Evyra Rizki Safitri_1202190015  
 
-#### -> Nabila Nur Amalia
+#### -> Nabila Nur Amalia_1202190013
 
-#### -> M. Pradata Yuda P
+#### -> M. Pradata Yuda P_1202190061
 
 
 
@@ -94,7 +94,7 @@ ip r
 
    ![7.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/1/7.PNG?raw=true)
 
-9. Install SSH pada Server
+9. Masuk kembali ke lxc landing dan Install SSH Server
 
 ```
 apt install openssh-server python -y
@@ -835,7 +835,7 @@ sudo ansible-playbook -i hosts installwordpress.yml -k
 
 10. Mencoba Akses Url vm.local/blog
 
-    walah, hasilnya sebagai berikut
+    huwalah, hasilnya sebagai berikut
 
 ![7.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/4/7.PNG?raw=true)
 
