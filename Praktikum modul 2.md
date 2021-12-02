@@ -216,3 +216,23 @@ apt install nano net-tools curl
     ![5.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/9/5.PNG?raw=true)
 
 27. 
+(1) <img width="406" alt="0" src="https://user-images.githubusercontent.com/92932656/144352498-17f01c35-2ff2-4005-8269-d9d764383eb3.PNG">
+<img width="242" alt="1" src="https://user-images.githubusercontent.com/92932656/144352518-d1a50c0c-eece-4921-8069-2a7294e2c064.PNG">
+<img width="366" alt="4" src="https://user-images.githubusercontent.com/92932656/144352584-38ca7eca-7bc4-4f29-a7b5-275d89f26a15.PNG">
+<img width="212" alt="5" src="https://user-images.githubusercontent.com/92932656/144352593-824713d7-1449-4605-a566-b632fd49940c.PNG">
+<img width="373" alt="6" src="https://user-images.githubusercontent.com/92932656/144352594-258364ba-189a-4c04-9d24-0893ef8e3a51.PNG">
+<img width="203" alt="7" src="https://user-images.githubusercontent.com/92932656/144352596-791f4a81-ad80-4603-ae55-b5b8d1607f17.PNG">
+<img width="324" alt="8" src="https://user-images.githubusercontent.com/92932656/144352598-744097a3-95a7-4d2c-9c36-b7c43346f95f.PNG">
+<img width="326" alt="2" src="https://user-images.githubusercontent.com/92932656/144352601-cef51507-1749-452e-be86-3425066ab8c3.PNG">
+<img width="267" alt="3" src="https://user-images.githubusercontent.com/92932656/144352605-323d764f-e95e-47c6-9e16-94de0d6da847.PNG">
+
+29. (2)<img width="319" alt="0" src="https://user-images.githubusercontent.com/92932656/144352655-ec3d125d-9798-4919-bc9b-e04662f8212e.PNG">
+<img width="401" alt="1" src="https://user-images.githubusercontent.com/92932656/144352657-35bd0bc1-0257-4a75-b7e5-f78ff94d3c04.PNG">
+<img width="232" alt="2" src="https://user-images.githubusercontent.com/92932656/144352659-e00c67f5-3ec8-45f2-be50-c24afad5b120.PNG">
+<img width="360" alt="3" src="https://user-images.githubusercontent.com/92932656/144352662-70be253c-da96-4ea4-9cd8-8d7406c8185b.PNG">
+<img width="258" alt="4" src="https://user-images.githubusercontent.com/92932656/144352665-b2f912af-e5e9-4fc7-b7f0-6bdc54ea5123.PNG">
+<img width="385" alt="5" src="https://user-images.githubusercontent.com/92932656/144352666-3a50749f-d237-4ee1-ab1c-ba88e1c8f9a3.PNG">
+<img width="240" alt="6" src="https://user-images.githubusercontent.com/92932656/144352668-1b563390-06d6-4e6f-a1c9-7b4b820da15d.PNG">
+<img width="336" alt="7" src="https://user-images.githubusercontent.com/92932656/144352669-15f01c2f-2566-4107-a4be-b2563d44306f.PNG">
+<img width="185" alt="8" src="https://user-images.githubusercontent.com/92932656/144352671-4b869694-25cd-402a-ab31-88f436c7a49a.PNG">
+<img width="331" alt="9" src="https://user-images.githubusercontent.com/92932656/144352673-6baab403-b9d9-460d-b104-aac5624fcc81.PNG">
