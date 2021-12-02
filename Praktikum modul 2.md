@@ -127,8 +127,7 @@ apt install nano net-tools curl
     apt install software-properties
     ```
 
-    ![5.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/8/5.PNG?raw=true)
-
+   ![5.PNG](https://github.com/nabill13/praktikum-SAS-modul-II/blob/main/8/5.PNG?raw=true)
 16. Lalu install curl unzip
 
     ```
